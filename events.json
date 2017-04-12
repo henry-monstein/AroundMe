@@ -1,0 +1,47 @@
+[
+	{
+		"title" : "Freedom Day",
+		"map" : "map",
+    	"position" : {"lat" : "53.920619", "lng" : "27.598477"},
+		"author" : "MyName",
+		"text" : "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~",
+		"images" : [
+			"/dfg/df/df/fgfgf.jpg",
+			"/dfg/df/df/rttr.jpg",
+			"/dfg/df/df/cvf.jpg",
+			"/dfg/df/df/bbzzf.jpg",
+			"/dfg/df/df/fcbvn.jpg",
+			"/dfg/df/df/fgnb.jpg"
+		],
+		"followers" : "700",
+		"term" : "172800"
+	},
+	{
+		"title" : "City Day",
+		"map" : "map",
+    	"position" : {"lat" : "53.920619", "lng" : "27.598477"},
+		"author" : "MyName",
+		"text" : "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~",
+		"images" : [
+			"/dfg/df/df/fgfgf.jpg",
+			"/dfg/df/df/fgfgf.jpg",
+			"/dfg/df/df/fgfgf.jpg",
+			"/dfg/df/df/fgfgf.jpg"
+		],
+		"followers" : "230",
+		"term" : "172800"
+	},
+	{
+		"title" : "Police Day",
+		"map" : "map",
+    	"position" : {"lat" : "53.920619", "lng" : "27.598477"},
+		"author" : "MyName",
+		"text" : "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~",
+		"images" : [
+			"/dfg/df/df/trash.jpg",
+			"/dfg/df/df/rtr.jpg",
+		],
+		"followers" : "0",
+		"term" : "172800"
+	}
+]

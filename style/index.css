@@ -1,0 +1,45 @@
+#start {
+    width: 100%
+    height: 500px;
+    background-image: url(../img/start.jpg);
+    background-size: 100%;
+}
+#start > span {
+  vertical-align: middle;
+}
+.start {
+    color: #424373;
+    height: calc(100vh - 5.6em);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.start > h1 {
+    font-size: 15vh;
+}
+.start > .text {
+    font-size: 5vh;
+    border: 2px;
+    text-shadow: black 1px 1px 0, black -1px -1px 0, black -1px 1px 0, black 1px -1px 0;
+    color: whitesmoke;
+}
+.buttons {
+    width: 24vw;
+    display: flex;
+    justify-content: space-between;
+}
+.buttons > a {
+    height: 2em;
+    width: 8vw;
+    background-color: #424373;
+    text-decoration: none;
+    color:  whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.buttons > a:hover {
+    font-weight: bold;
+    background-color: #1b1c3c;
+}

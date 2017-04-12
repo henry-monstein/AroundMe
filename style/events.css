@@ -1,0 +1,48 @@
+/*#headerMain {
+        width:100%;
+        margin:0px auto;
+        z-index:0; 
+}
+.stripe {
+        width:100%;
+        position: fixed;
+}*/
+.events {
+    width: 100vw;
+}
+.post {
+    height: 50vh;
+    width: 80vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: lightgrey;
+    margin: 0.5em;
+}
+.post > div {
+    width: 35vw;
+    background-color: darkgrey;
+}
+.post > div > .user {
+
+}
+.post > div > .image > img {
+    width: 100%;
+}
+.post > div > .text {
+    overflow: auto;
+    color: red;
+    height: 40vh;
+}
+.post > div > .text::-webkit-scrollbar {
+    width: 1em;
+    height: 0em;
+}
+.post > div > .text::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+.post > div > .text::-webkit-scrollbar-thumb {
+    background-color: darkgrey;
+    outline: 1px solid slategrey;
+}

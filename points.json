@@ -1,0 +1,50 @@
+[
+	{
+		"map" : "map",
+    	"position" : {"lat" : "53.920619", "lng" : "27.598477"},
+		"title" : "CUM",
+		"author" : "MyName",
+		"text" : "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~",
+		"images" : [
+			"/dfg/df/df/fgfgf.jpg",
+			"/dfg/df/df/rttr.jpg",
+			"/dfg/df/df/cvf.jpg",
+			"/dfg/df/df/bbzzf.jpg",
+			"/dfg/df/df/fcbvn.jpg",
+			"/dfg/df/df/fgnb.jpg"
+		],
+		"likes" : "5000"
+	},
+	{
+		"map" : "map",
+		"position" : {"lat" : "53.920619", "lng" : "27.598477"},
+		"title":"BSU",
+		"author" : "MyName",
+		"text" : "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~",
+		"images" : [
+			"/dfg/df/df/fgfgf.jpg",
+			"/dfg/df/df/rttr.jpg",
+			"/dfg/df/df/cvf.jpg",
+			"/dfg/df/df/bbzzf.jpg",
+			"/dfg/df/df/fcbvn.jpg",
+			"/dfg/df/df/fgnb.jpg"
+		],
+		"likes" : "9999"
+	},
+	{
+		"map" : "map",
+    	"position" : {"lat" : "53.920619", "lng" : "27.598477"},
+		"title" : "Minsk",
+		"author" : "MyName",
+		"text" : "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~",
+		"images" : [
+			"/dfg/df/df/fgfgf.jpg",
+			"/dfg/df/df/rttr.jpg",
+			"/dfg/df/df/cvf.jpg",
+			"/dfg/df/df/bbzzf.jpg",
+			"/dfg/df/df/fcbvn.jpg",
+			"/dfg/df/df/fgnb.jpg"
+		],
+		"likes" : "1300"
+	}
+]
