@@ -19,7 +19,8 @@
     font-size: 15vh;
 }
 .start > .text {
-    font-size: 5vh;
+    font-size: 4vh;
+    width: 70vw;
     border: 2px;
     text-shadow: black 1px 1px 0, black -1px -1px 0, black -1px 1px 0, black 1px -1px 0;
     color: whitesmoke;
