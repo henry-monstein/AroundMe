@@ -1,5 +1,105 @@
-#way > form{
-    height: 6em;
+.list {
+    position: absolute;
+    display: flex;
+    width: 100vw;
+    justify-content: flex-end;
+    z-index: 2;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+}
+.list > div {
+    display: none;
+    margin: 0;
+    width: 30vw;
+}
+.list .title {
+    font-weight: bold;
+    cursor: pointer;
+}
+.list .title:before {
+    content: '<<';
+    padding-right: 6px;
+    color: green;
+}
+.list.open > div {
+    display: block;
+}
+.list.open .title:before {
+    content: 'X';
+    color: red;
+}
+
+#events {
+    background-color: transparent;
+    overflow: auto;
+    height: calc(100vh - 6.6em);
+    width: 30vw;
+}
+#events::-webkit-scrollbar {
+    width: 8px;
+    height: 0;
+}
+#events::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+#events::-webkit-scrollbar-thumb {
+    background-color: darkgrey;
+    outline: 1px solid slategrey;
+}
+.post {
+    height: calc(30vw + 6.5em);
+    width: calc(30vw - 8px);
+    background-color: transparent;
+    padding-bottom: 0.7em;
+}
+.post > .user {
+    height: 1.5em;
+    background-color: #424373;
+    color: whitesmoke;
+    text-align: center;
+    vertical-align: middle;
+}
+.post > .image {
+    height: 30vw;
+    overflow: hidden;
+}
+.post > .image > img {
+    display: flex;
+    justify-content: center;
+    height: 100%;
     width: 100%;
-    background-color: whitesmoke;
+}
+.post > .location {
+    height: 1.5em;
+    background-color: #424373;
+    text-align: center;
+    vertical-align: middle;
+    color: whitesmoke;
+    
+}
+.post > .moody {
+    height: 1.5em;
+    background-color: #424373;
+    text-align: center;
+    vertical-align: middle;
+    color: whitesmoke;
+    
+}
+.post > .like > a {
+    height: 2em;
+    font-size: 1em;
+    background-color: #424373;
+    color: whitesmoke;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.post > .like > a > img {
+    height: 1em;
+    width: 1em;
+}
+.post > .like > a:hover {
+    background-color: #1b1c3c;
 }

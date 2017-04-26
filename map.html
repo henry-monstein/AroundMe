@@ -2,11 +2,14 @@
 <html>
 <head>
 	<title>ArounMe</title>
+	<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
 	<meta charset = "utf-8">
 	<link rel="shortcut icon" href="img/icon.png" type="image/png">
 	<link rel="stylesheet" href="style/common.css"/>
 	<link rel="stylesheet" href="style/map.css">
 	<link rel="stylesheet" href="style/maps.css">
+	<script src="https://cdn.polyfill.io/v1/polyfill.js?features=Element.prototype.closest"></script>
+	<script src="script/map.js"></script>
 	<script src="https://maps.googleapis.com/maps/api/js?k=AIzaSyDooFAW4OnpEgDxjpQYTr5Bk7rpW1miPEg&callback=initMap" async defer></script>
 </head>
 <header id="headerMain">
@@ -14,8 +17,6 @@
      	<section class="menu1">
 		    <ul class="menu">
 			    <li><a href="index.html" id="main"><img src="img/logo.png"></a></li>
-			    <li><a href="events.html" id="cont">Events</a></li>
-			    <!-- <li><a name="up" id="up"></a></li> -->
 			</ul>
 		</section>
 		<section class="menu2">	
@@ -31,35 +32,8 @@
 	</section>
 </header>
 <body>
-	<section id="map"></section>
-	<a name="start2"></a>
+  	<section id="vidget"></section>
 	<script type="text/javascript" src="script/map.js"></script>
-	<section id="way">
-		<form>
-			<label>
-				<input type="reset" name="" value="Проложить маршрут">
-			</label>
-			<label>
-				<input type="reset" name="" value="Сбросить форму">
-	       	</label>
-	       	<label>
-	       		<span>Начальная точка</span>
-	       		<input type="StartPoint">
-	       	</label>
-	       	<label>
-	       		<span>Геолокация</span>
-	       		<input type="StartPoint">
-	       	</label>
-	       	<label>
-	       		<span>Конечная точка</span>
-	       		<input type="EndPoint">
-	       	</label>
-	       	<label>
-	       		<span></span>
-	       		<input type="StartPoint">
-	       	</label>
-		</form>
-	</section>
 </body>
 <footer>
 	<div>

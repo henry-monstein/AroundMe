@@ -28,7 +28,7 @@
 .buttons {
     width: 24vw;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
 }
 .buttons > a {
     height: 2em;

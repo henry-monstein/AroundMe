@@ -3,16 +3,14 @@ body {
 }
 
 #map {
-  height: calc(100vh - 11.6em);
+  height: calc(100vh - 5.6em);
   position: relative;
   width: 100%;
 }
-
 .maps-frame {
   height: 430px;
-  width: 100%;
+  width: 98%;
 }
-
 .kd-tabbed-vert.header-links .kd-tabbutton a {
   color: #757575;
   display: inline-block;
@@ -20,23 +18,18 @@ body {
   padding: 0 24px;
   width: 100%;
 }
-
 .kd-tabbed-vert.header-links .kd-tabbutton {
   padding: 0;
 }
-
 .kd-tabbed-vert.header-links .kd-tabbutton.selected a {
   color: #03a9f4;
 }
-
 .kd-tabbed-vert.header-links .kd-tabbutton a:focus {
   text-decoration: none;
 }
-
 p.top-desc {
   padding: 1em 1em .1em 1em;
 }
-
 p.bottom-desc {
   padding: 0em 1em 1em 1em;
 }

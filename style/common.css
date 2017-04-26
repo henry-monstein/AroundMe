@@ -40,15 +40,6 @@ ul.menu > li > a {
     align-items: center;
     justify-content: center;
 }
-/*#main {
-    padding: 0px;
-}
-a#main {
-    background-color: #2eb1ff;
-}*/
-/*a#main:hover {
-    background-color: #1b79b2;
-}*/
 ul.menu > li > a > img {
     height: 100%
 }
@@ -64,7 +55,7 @@ ul.submenu {
     top: 100%;
     left: 0;
     background-color: transparent;
-    z-index: 2;
+    z-index: 6;
 }
 ul.submenu > li {
     display: block;
