@@ -2,7 +2,7 @@ var test = '[' +
   '{' + 
     '"location" : ["53.903771", "27.572561"],' +
     '"title" : "Park",' +
-    '"author" : "MyName",' +
+    '"author" : "MyName1",' +
     '"moody" : "1",' +
     '"image" : "./img/Ix13ifixEsY.jpg",' +
     '"likes" : 5000' +
@@ -10,7 +10,7 @@ var test = '[' +
   '{' +
    '"location" : ["53.920619", "27.598477"],' +
     '"title" : "Academy",' +
-    '"author" : "MyName",' +
+    '"author" : "MyName2",' +
     '"moody" : "3",' +
     '"image" : "./img/Ix13ifixEsY.jpg",' +
     '"likes" : 9999' +
@@ -18,7 +18,7 @@ var test = '[' +
   '{' +
     '"location" : ["53.902258", "27.561792"],' +
     '"title" : "Minsk",' +
-    '"author" : "MyName",' +
+    '"author" : "MyName3",' +
     '"moody" : "2",' +
     '"image" : "./img/Ix13ifixEsY.jpg",' +
     '"likes" : 1300' +
@@ -64,18 +64,19 @@ function initMap() {
       animation: google.maps.Animation.DROP,
       title : test[i].title
     });
-    markers[i].addListener('click', toggleBounce);
+    // markers[i].addListener('click', console.log(0));
     markers[i].setMap(map);
+    markers[i].addListener('click', toggleBounce);
+  }
+}
+function toggleBounce() {
+  if (this.getAnimation() !== null) {
+    this.setAnimation(null);
+  } else {
+    this.setAnimation(google.maps.Animation.BOUNCE);
   }
 }
 
-function toggleBounce() {
-  if (marker.getAnimation() !== null) {
-    marker.setAnimation(null);
-  } else {
-    marker.setAnimation(google.maps.Animation.BOUNCE);
-  }
-}
 
 function handleLocationError(browserHasGeolocation, infoWindow, pos) {
   infoWindow.setPosition(pos);
@@ -126,7 +127,6 @@ function Events(options) {
       var image = document.createElement('div');
       image.className = "image";
       var location = document.createElement('div');
-
       location.textContent = item.location + "";
       location.className = "location";
       var moody = document.createElement('div');
@@ -140,15 +140,17 @@ function Events(options) {
       post.insertBefore(image, location);
       post.insertBefore(user, image);
       var img = document.createElement('img');
-      img.setAttribute('scr', item.image)
+      img.setAttribute('src', item.image)
       image.appendChild(img);
       var alike = document.createElement('a');
-      alike.setAttribute('href', "#")
-      alike.textContent = "Likes " + item.likes;
+      alike.setAttribute('href', "#");
+      var p = document.createElement('p');
+      p.textContent = " Likes " + item.likes;
       like.appendChild(alike);
       var likeimg = document.createElement('img');
-      likeimg.setAttribute('scr', "./img/like.png")
-      alike.appendChild(likeimg);
+      likeimg.setAttribute('src', "./img/like.png")
+      alike.appendChild(p);
+      alike.insertBefore(likeimg, p);
     });
     elem.appendChild(events);
   }
@@ -178,4 +180,66 @@ var events = new Events({
   title: "",
     items: test
 });
+// download list
+// function Download() { 
+//   var elem;
+
+//   function getElem() {
+//     if (!elem) render();
+//     return elem;
+//   }
+
+//   function render() {
+//     elem = document.createElement('section');
+//     elem.className = "list";
+
+//     var titleElem = document.createElement('span');
+//     elem.appendChild(titleElem);
+//     titleElem.className = "title";
+//     titleElem.textContent = options.title;
+
+//     elem.onmousedown = function() {
+//       return false;
+//     };
+
+//     elem.onclick = function(event) {
+//       if (event.target.closest('.title')) {
+//         toggle();
+//       }
+//     }
+
+//   }
+//   function renderItems() {
+//     var items = options.items || [];
+//     var events = document.createElement('div');
+//     events.id = "events";
+//     items.forEach(function(item) {
+      
+//     });
+//     elem.appendChild(events);
+//   }
+
+//   function open() {
+//     if (!elem.querySelector('div')) {
+//       renderItems();
+//     }
+//     elem.classList.add('open');
+//   };
+
+//   function close() {
+//     elem.classList.remove('open');
+//   };
+
+//   function toggle() {
+//     if (elem.classList.contains('open')) close();
+//     else open();
+//   };
+
+//   this.getElem = getElem;
+//   this.toggle = toggle;
+//   this.close = close;
+//   this.open = open;
+// }
+
 vidget.insertBefore(events.getElem(), mapd);
+// vidget.insertBefore(download.getElem(), events);
